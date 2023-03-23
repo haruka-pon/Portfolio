@@ -1,0 +1,129 @@
+// font-family: 'Zen Kaku Gothic New', sans-serif;
+// font-family: proxima-nova, sans-serif;
+
+:root {
+    --primary-color: #0A0A0A;
+    --sub-color: #1A1A1A;
+    --accent-color-1: #58FF95;
+    --accent-color-2: #589BFF;
+    --text-color: #ffff;
+    --primary-font: 'proxima-nova', sans-serif;
+    --jp-font: 'Zen Kaku Gothic New', sans-serif;
+}
+
+@media screen and (min-width: 465px) {
+    body {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1028px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav_block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
+
+        h1 {
+            font-size: 1.4em;
+            color: var(--accent-color-1);
+            font-weight: bold;
+            font-family: var(--primary-font);
+            font-weight: 700;
+        }
+    
+        nav {
+            width: 30%;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+  
+    .date_head {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        li{
+            svg{
+                fill: white;
+                width: 1em;
+                height: auto;
+            }
+        }
+    }
+}
+
+main>div {
+    background-color: var(--sub-color);
+}
+
+main {
+    .about {
+        border-radius: 20px;
+        width: 55%;
+
+        .name {
+            font-family: proxima-nova, sans-serif;
+            font-weight: 600;
+            font-style: italic;
+            font-size: 6em;
+        }
+    }
+
+    .icon{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 20px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .qrcode{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 20px;
+        background-color: var(--primary-color);
+        img{
+            width: 90%;
+        }
+    }
+
+    .profile{
+        width: 30%;
+        border-radius: 20px;
+    }
+}

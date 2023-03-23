@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #0A0A0A;
+  --sub-color: #1A1A1A;
+  --accent-color-1: #58FF95;
+  --accent-color-2: #589BFF;
+  --text-color: #ffff;
+  --primary-font: 'proxima-nova', sans-serif;
+  --jp-font: 'Zen Kaku Gothic New', sans-serif;
+}
+
+@media screen and (min-width: 465px) {
+  body {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+}
+
+header .nav_block h1 {
+  font-size: 1.4em;
+  color: var(--accent-color-1);
+  font-weight: bold;
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+
+header .nav_block nav {
+  width: 30%;
+}
+
+header .nav_block nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .date_head {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .date_head li svg {
+  fill: white;
+  width: 1em;
+  height: auto;
+}
+
+main > div {
+  background-color: var(--sub-color);
+}
+
+main .about {
+  border-radius: 20px;
+  width: 55%;
+}
+
+main .about .name {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 6em;
+}
+
+main .icon {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 20px;
+}
+
+main .icon img {
+  width: 100%;
+}
+
+main .qrcode {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+}
+
+main .qrcode img {
+  width: 90%;
+}
+
+main .profile {
+  width: 30%;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=style.css.map */
