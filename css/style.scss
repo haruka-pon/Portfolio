@@ -39,14 +39,16 @@
 body {
     background-color: var(--primary-color);
     color: var(--text-color);
+    height: 100vh;
 }
 
 header {
+    height: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    .nav_block{
+    .nav_block {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -59,9 +61,10 @@ header {
             font-family: var(--primary-font);
             font-weight: 700;
         }
-    
+
         nav {
             width: 30%;
+
             ul {
                 display: flex;
                 justify-content: space-between;
@@ -69,15 +72,16 @@ header {
             }
         }
     }
-  
+
     .date_head {
         width: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        li{
-            svg{
+
+        li {
+            svg {
                 fill: white;
                 width: 1em;
                 height: auto;
@@ -86,44 +90,122 @@ header {
     }
 }
 
-main>div {
-    background-color: var(--sub-color);
-}
-
 main {
-    .about {
-        border-radius: 20px;
-        width: 55%;
+    height: 90%;
 
-        .name {
-            font-family: proxima-nova, sans-serif;
-            font-weight: 600;
-            font-style: italic;
-            font-size: 6em;
+    .top_wrapp {
+        height: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .about {
+
+            background-color: var(--sub-color);
+            border-radius: 20px;
+            width: 55%;
+            height: 100%;
+
+            .name {
+                font-family: proxima-nova, sans-serif;
+                font-weight: 600;
+                font-style: italic;
+                font-size: 6em;
+            }
+        }
+
+        .mydata_container {
+            background-color: #8f4a4a;
+            width: 50%;
+            height: 100%;
+
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-template-columns: 0.5fr 1.5fr;
+            grid-template-rows: 1.7fr 0.3fr;
+            gap: 0% 0%;
+            grid-template-areas:
+                "icon_qrcode profile"
+                "contact contact";
+
+            // grid要素
+            .contact {
+                grid-area: contact;
+            }
+
+            .profile {
+                grid-area: profile;
+            }
+
+            .icon_qrcode {
+                grid-area: icon_qrcode;
+            }
+
+            .icon_qrcode {
+                // width: 10vw;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+
+                .icon {
+                    // width: 10vw;
+                    // height: 50%;
+                    // height: 10vw;
+                    height: 50%;
+                    background-color: var(--sub-color);
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+
+                        width: 95%;
+                        // height: 100%;
+                    }
+                }
+
+                .qrcode {
+                    // width: 10vw;
+                    height: 50%;
+                    border-radius: 20px;
+                    // background-color: var(--sub-color);
+                    background-color: #131313;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 95%;
+                        // height: 100%;
+                    }
+                }
+            }
+
+            .profile {
+                background-color: var(--sub-color);
+                // width: 30%;
+                border-radius: 20px;
+            }
+
+            .contact {
+                background-color: var(--sub-color);
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
         }
     }
 
-    .icon{
-        width: 10vw;
-        height: 10vw;
-        border-radius: 20px;
-        img{
-            width: 100%;
-        }
-    }
 
-    .qrcode{
-        width: 10vw;
-        height: 10vw;
-        border-radius: 20px;
-        background-color: var(--primary-color);
-        img{
-            width: 90%;
-        }
-    }
-
-    .profile{
-        width: 30%;
-        border-radius: 20px;
-    }
 }
