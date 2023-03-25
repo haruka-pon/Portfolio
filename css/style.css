@@ -4,31 +4,32 @@
   --accent-color-1: #58FF95;
   --accent-color-2: #589BFF;
   --text-color: #ffff;
+  --text-color-sub: #777777;
   --primary-font: 'proxima-nova', sans-serif;
   --jp-font: 'Zen Kaku Gothic New', sans-serif;
 }
 
 @media screen and (min-width: 465px) {
   body {
-    font-size: 9px;
+    font-size: 7px;
   }
 }
 
 @media screen and (min-width: 768px) {
   body {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 
 @media screen and (min-width: 1028px) {
   body {
-    font-size: 12px;
+    font-size: 9px;
   }
 }
 
 @media screen and (min-width: 1300px) {
   body {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
@@ -39,7 +40,7 @@ body {
 }
 
 header {
-  height: 10%;
+  height: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,6 +50,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 1.5em;
 }
 
 header .nav_block {
@@ -65,7 +67,7 @@ header .nav_block {
 }
 
 header .nav_block h1 {
-  font-size: 1.4em;
+  font-size: 1.8em;
   color: var(--accent-color-1);
   font-weight: bold;
   font-family: var(--primary-font);
@@ -73,7 +75,7 @@ header .nav_block h1 {
 }
 
 header .nav_block nav {
-  width: 30%;
+  width: 45%;
 }
 
 header .nav_block nav ul {
@@ -103,18 +105,38 @@ header .date_head {
       flex-wrap: wrap;
 }
 
-header .date_head li svg {
+header .date_head .date time {
+  color: var(--accent-color-1);
+}
+
+header .date_head .adjust {
+  margin: 0 1em;
+}
+
+header .date_head .adjust svg {
   fill: white;
-  width: 1em;
-  height: auto;
+  width: 1.5em;
+}
+
+header .date_head .humbarger_menu {
+  padding: 6px;
+  border: solid 2px var(--sub-color);
+  border-radius: 10px;
+}
+
+header .date_head .humbarger_menu svg {
+  fill: white;
+  width: 1.5em;
 }
 
 main {
-  height: 90%;
+  height: 93%;
+  height: calc(100% - 1.5em - 5em);
+  margin: 0 1.5em 1.5em 1.5em;
 }
 
 main .top_wrapp {
-  height: 50%;
+  height: 58%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,21 +148,71 @@ main .top_wrapp {
 }
 
 main .top_wrapp .about {
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
   background-color: var(--sub-color);
   border-radius: 20px;
   width: 55%;
-  height: 100%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding-bottom: 1em;
+}
+
+main .top_wrapp .about p {
+  margin-left: 5%;
 }
 
 main .top_wrapp .about .name {
   font-family: proxima-nova, sans-serif;
   font-weight: 600;
   font-style: italic;
-  font-size: 6em;
+  font-size: 5.5em;
+  margin-top: 3%;
+}
+
+main .top_wrapp .about .mini_vision {
+  width: 80%;
+  margin-top: 1%;
+  line-height: 1.6em;
+  font-size: 1.4em;
+}
+
+main .top_wrapp .about .mini_about {
+  width: 80%;
+  line-height: 2.2em;
+  letter-spacing: 0.18em;
+  margin-top: 5%;
+}
+
+main .top_wrapp .about span {
+  color: var(--accent-color-1);
+}
+
+main .top_wrapp .about button {
+  display: block;
+  margin: 0 auto;
+  margin-top: auto;
+  width: 90%;
+  color: var(--accent-color-1);
+  border: #707070 solid 1px;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 25px 0;
+  border-radius: 20px;
+}
+
+main .top_wrapp .about button a {
+  width: 100%;
+  height: 100%;
 }
 
 main .top_wrapp .mydata_container {
-  background-color: #8f4a4a;
   width: 50%;
   height: 100%;
   display: -ms-grid;
@@ -191,7 +263,8 @@ main .top_wrapp .mydata_container .icon_qrcode {
 }
 
 main .top_wrapp .mydata_container .icon_qrcode .icon {
-  height: 50%;
+  margin-bottom: 1.5em;
+  height: calc(50% - 1.5em);
   background-color: var(--sub-color);
   border-radius: 20px;
   display: -webkit-box;
@@ -210,9 +283,9 @@ main .top_wrapp .mydata_container .icon_qrcode .icon img {
 }
 
 main .top_wrapp .mydata_container .icon_qrcode .qrcode {
-  height: 50%;
+  margin-bottom: 1.5em;
+  height: calc(50% - 1.5em);
   border-radius: 20px;
-  background-color: #131313;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,6 +304,8 @@ main .top_wrapp .mydata_container .icon_qrcode .qrcode img {
 main .top_wrapp .mydata_container .profile {
   background-color: var(--sub-color);
   border-radius: 20px;
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 main .top_wrapp .mydata_container .contact {
@@ -241,7 +316,19 @@ main .top_wrapp .mydata_container .contact {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-radius: 20px;
+  margin-bottom: 1.5em;
+}
+
+main .top_wrapp .mydata_container .contact .contact_text {
+  color: var(--text-color-sub);
+}
+
+main .top_wrapp .mydata_container .contact .contact_text .mail {
+  color: var(--accent-color-2);
 }
 
 main .top_wrapp .mydata_container .contact ul {
@@ -265,5 +352,21 @@ main .under_wrapp {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  height: 42%;
+}
+
+main .under_wrapp .works {
+  width: 85%;
+  height: 100%;
+  background-color: var(--sub-color);
+  border-radius: 20px;
+  margin-right: 1.5em;
+}
+
+main .under_wrapp .sanpo {
+  width: 15%;
+  height: 100%;
+  background-color: var(--sub-color);
+  border-radius: 20px;
 }
 /*# sourceMappingURL=style.css.map */
