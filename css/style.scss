@@ -261,6 +261,22 @@ main {
                 border-radius: 20px;
                 margin-left: 1.5em;
                 margin-bottom: 1.5em;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    // justify-content: space-between;
+
+                    .profile_title {
+                        color: var(--text-color-sub);
+                        width: 10em;
+                    }
+
+                    .profile_contents {
+                        // margin-le: 20%;
+                    }
+                }
+
             }
 
             .contact {
@@ -268,12 +284,16 @@ main {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
                 border-radius: 20px;
                 margin-bottom: 1.5em;
+                padding: 0 5%;
 
                 .contact_text {
                     color: var(--text-color-sub);
+
                     .mail {
+                        margin-left: 4em;
                         color: var(--accent-color-2);
                     }
                 }
@@ -283,6 +303,13 @@ main {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
+                    li {
+                        margin-left: 1.5em;
+                        // padding-left: 10px;
+                        width: 3em;
+                        fill: var(--text-color);
+                    }
                 }
             }
 
