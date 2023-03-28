@@ -263,7 +263,7 @@ main {
                 border-radius: 20px;
                 margin-left: 1.5em;
                 margin-bottom: 1.5em;
-                padding: 2% 5%;
+                padding: 2em 2.8em;
 
               
                 .profile_header {
@@ -352,6 +352,19 @@ main {
             background-color: var(--sub-color);
             border-radius: 20px;
             margin-right: 1.5em;
+            .works_header {
+                padding: 2em 2.8em;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h2{
+                    font-size: 1.2em;    
+                    font-weight: 800; 
+                }
+                p{
+                    color: var(--accent-color-1);
+                }
+            }
         }
 
         .sanpo {

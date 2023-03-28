@@ -308,7 +308,7 @@ main .top_wrapp .mydata_container .profile {
   border-radius: 20px;
   margin-left: 1.5em;
   margin-bottom: 1.5em;
-  padding: 2% 5%;
+  padding: 2em 2.8em;
 }
 
 main .top_wrapp .mydata_container .profile .profile_header {
@@ -419,6 +419,28 @@ main .under_wrapp .works {
   background-color: var(--sub-color);
   border-radius: 20px;
   margin-right: 1.5em;
+}
+
+main .under_wrapp .works .works_header {
+  padding: 2em 2.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .under_wrapp .works .works_header h2 {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+main .under_wrapp .works .works_header p {
+  color: var(--accent-color-1);
 }
 
 main .under_wrapp .sanpo {
