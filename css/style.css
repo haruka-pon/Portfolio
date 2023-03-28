@@ -306,6 +306,28 @@ main .top_wrapp .mydata_container .profile {
   border-radius: 20px;
   margin-left: 1.5em;
   margin-bottom: 1.5em;
+  padding: 2% 5%;
+}
+
+main .top_wrapp .mydata_container .profile .profile_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .top_wrapp .mydata_container .profile .profile_header h2 {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+main .top_wrapp .mydata_container .profile .profile_header p {
+  color: var(--accent-color-1);
 }
 
 main .top_wrapp .mydata_container .profile ul {
@@ -315,11 +337,21 @@ main .top_wrapp .mydata_container .profile ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 1.6em 0;
 }
 
 main .top_wrapp .mydata_container .profile ul .profile_title {
   color: var(--text-color-sub);
   width: 10em;
+}
+
+main .top_wrapp .mydata_container .profile ul .profile_contents {
+  margin-left: 5%;
+}
+
+main .top_wrapp .mydata_container .profile .hobby_contents {
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
 }
 
 main .top_wrapp .mydata_container .contact {
