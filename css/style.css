@@ -37,6 +37,7 @@ body {
   background-color: var(--primary-color);
   color: var(--text-color);
   height: 100vh;
+  font-family: proxima-nova, sans-serif;
 }
 
 header {
@@ -188,6 +189,7 @@ main .top_wrapp .about .mini_about {
   line-height: 2.2em;
   letter-spacing: 0.18em;
   margin-top: 5%;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 main .top_wrapp .about span {
@@ -347,11 +349,13 @@ main .top_wrapp .mydata_container .profile ul .profile_title {
 
 main .top_wrapp .mydata_container .profile ul .profile_contents {
   margin-left: 5%;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 main .top_wrapp .mydata_container .profile .hobby_contents {
   line-height: 1.8em;
   letter-spacing: 0.1em;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 main .top_wrapp .mydata_container .contact {

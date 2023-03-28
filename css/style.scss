@@ -41,6 +41,7 @@ body {
     background-color: var(--primary-color);
     color: var(--text-color);
     height: 100vh;
+    font-family: proxima-nova, sans-serif;
 }
 
 header {
@@ -164,6 +165,7 @@ main {
                 line-height: 2.2em;
                 letter-spacing: 0.18em;
                 margin-top: 5%;
+                font-family: 'Zen Kaku Gothic New', sans-serif;
             }
 
             span {
@@ -290,12 +292,14 @@ main {
 
                     .profile_contents {
                         margin-left: 5%;
+                        font-family: 'Zen Kaku Gothic New', sans-serif;
                     }
                 }
 
                 .hobby_contents {
                     line-height: 1.8em;
                     letter-spacing: 0.1em;
+                    font-family: 'Zen Kaku Gothic New', sans-serif;
                 }
             }
 
