@@ -1,0 +1,229 @@
+@charset "UTF-8";
+:root {
+  --primary-color: #0A0A0A;
+  --sub-color: #1A1A1A;
+  --accent-color-1: #58FF95;
+  --accent-color-2: #589BFF;
+  --text-color: #ffff;
+  --text-color-sub: #777777;
+  --primary-font: 'proxima-nova', sans-serif;
+  --jp-font: 'Zen Kaku Gothic New', sans-serif;
+}
+
+@media screen and (min-width: 465px) {
+  body {
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  body {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+header {
+  height: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1.5em;
+}
+
+header .humbarger_menu {
+  padding: 8px;
+  border: solid 2px var(--sub-color);
+  border-radius: 8px;
+}
+
+header .hamburger {
+  width: 1.3em;
+  height: 0.7em;
+  position: relative;
+}
+
+header .hamburger span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 20px;
+  background-color: var(--text-color);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .hamburger span:first-of-type {
+  /* ハンバーガーメニューの1番目の線 */
+  top: 0;
+}
+
+header .hamburger span:nth-of-type(2) {
+  /* ハンバーガーメニューの2番目の線 */
+  top: 50%;
+}
+
+header .hamburger span:last-of-type {
+  /* ハンバーガーメニューの3番目の線 */
+  top: 100%;
+}
+
+header .slide-menu {
+  border-radius: 0 0 0 20px;
+  background-color: var(--primary-color);
+  position: fixed;
+  right: 0;
+  top: 5em;
+  width: 115px;
+  height: 340px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .slide-menu li {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 5px;
+  cursor: pointer;
+}
+
+header .slide-menu li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .slide-menu li:hover {
+  background-color: var(--accent-color-1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .hamburger.active span:first-of-type {
+  /* ハンバーガーメニューの1番目の線 */
+  top: 50%;
+  -webkit-transform: rotate(405deg);
+          transform: rotate(405deg);
+}
+
+header .hamburger.active span:nth-of-type(2) {
+  /* ハンバーガーメニューの2番目の線 */
+  opacity: 0;
+  /* 透明にする */
+}
+
+header .hamburger.active span:last-of-type {
+  /* ハンバーガーメニューの3番目の線 */
+  top: 50%;
+  -webkit-transform: rotate(-405deg);
+          transform: rotate(-405deg);
+}
+
+header .slide-menu.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+header .nav_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+}
+
+header .nav_block h1 {
+  font-size: 1.8em;
+  color: var(--accent-color-1);
+  font-weight: bold;
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+
+header .date_head {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .date_head .date time {
+  color: var(--accent-color-1);
+}
+
+header .date_head .adjust {
+  margin: 0 1em;
+}
+
+header .date_head .adjust svg {
+  fill: white;
+  width: 1.5em;
+}
+/*# sourceMappingURL=header.css.map */
