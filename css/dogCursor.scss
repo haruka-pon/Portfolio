@@ -1,0 +1,60 @@
+#stalker {
+    // pointer-events: none;
+    // position: fixed;
+    // top: -8px; //座標調節（カーソル位置と円の中心を合わせる）
+    // left: -8px; //座標調節（カーソル位置と円の中心を合わせる）
+    // width: 16px; //マウスストーカーの直径
+    // height: 16px; //マウスストーカーの直径
+    // // background: rgba(0, 0, 0, 0.5);
+
+    // border-radius: 50%;
+    // transform: translate(0, 0);
+    // transition: transform 0.6s; //ちょっと遅れてついてくるように
+    // transition-timing-function: ease-out;
+    z-index: 99;
+
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/cutedog.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.cursor_move{
+    pointer-events: none;
+    position: fixed;
+    top: -8px; //座標調節（カーソル位置と円の中心を合わせる）
+    left: -8px; //座標調節（カーソル位置と円の中心を合わせる）
+    width: 16px; //マウスストーカーの直径
+    height: 16px; //マウスストーカーの直径
+    // background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transform: translate(0, 0);
+    transition: transform 0.6s; //ちょっと遅れてついてくるように
+    transition-timing-function: ease-out;
+}
+
+
+#stalker_just_wrapp {
+    pointer-events: none;
+    position: fixed;
+    top: -8px; //座標調節（カーソル位置と円の中心を合わせる）
+    left: -8px; //座標調節（カーソル位置と円の中心を合わせる）
+    width: 16px; //マウスストーカーの直径
+    height: 16px; //マウスストーカーの直径
+    background: rgba(0, 0, 0, 0.5);
+
+    border-radius: 50%;
+    transform: translate(0, 0);
+    // transition: transform 0.1s; //ちょっと遅れてついてくるように
+    // transition-timing-function: ease-out;
+    z-index: 98;
+
+    width: 30px;
+    height: 30px;
+    // background-image: url(../images/tenisBall.png);
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-size: contain;
+}

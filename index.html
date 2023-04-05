@@ -29,10 +29,12 @@
   <link rel="stylesheet" href="./css/destyle.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/dogCursor.css">
 
 </head>
 
 <body>
+
 
   <header>
     <div class="nav_block">
@@ -51,13 +53,13 @@
       <li class="humbarger_menu">
         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24""><path d=" M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z">
           </path></svg> -->
-          <div class="hamburger">
-            <!-- ハンバーガーメニューの線 -->
-            <span></span>
-            <span></span>
-            <span></span>
-            <!-- /ハンバーガーメニューの線 -->
-          </div>
+        <div class="hamburger">
+          <!-- ハンバーガーメニューの線 -->
+          <span></span>
+          <span></span>
+          <span></span>
+          <!-- /ハンバーガーメニューの線 -->
+        </div>
       </li>
     </ul>
     <ul class="slide-menu">
@@ -176,15 +178,23 @@
 
       <div class="sanpo">
         <h2>Sanpo</h2>
-        <img src="" alt="">
-        <img src="" alt="">
+        <div class="sanpo_wrapp">
+          <!-- 追従させる要素 -->
+          <div id="stalker"></div>
+       
+          <button id="stop_btn" class="stop_btn">まて</button>
+        </div>
       </div>
     </div>
   </main>
 
+  <!-- Cursor -->
+  <div id="stalker_just_wrapp" class=""></div>
+
   <script src="./js/swiper-bundle-847.min.js"></script>
   <script src="./js/swiper.js"></script>
   <script src="./js/hamburger.js"></script>
+  <script src="js/dogCursor.js"></script>
 </body>
 
 </html>
