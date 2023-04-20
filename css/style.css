@@ -5,6 +5,10 @@ body {
   font-family: proxima-nova, sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 main {
   height: 93%;
   height: calc(100% - 1.5em - 5em);
@@ -13,14 +17,9 @@ main {
 
 main .top_wrapp {
   height: 58%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 }
 
 main .top_wrapp .about {
@@ -30,13 +29,8 @@ main .top_wrapp .about {
   border-radius: 20px;
   width: 55%;
   height: 95%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
   padding-bottom: 1em;
 }
 
@@ -85,15 +79,9 @@ main .top_wrapp .about button {
 }
 
 main .top_wrapp .about button a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -101,51 +89,32 @@ main .top_wrapp .about button a {
 main .top_wrapp .mydata_container {
   width: 50%;
   height: 100%;
-  display: -ms-grid;
   display: grid;
   grid-auto-columns: 1fr;
-  -ms-grid-columns: 0.5fr 1.5fr;
-      grid-template-columns: 0.5fr 1.5fr;
-  -ms-grid-rows: 1.7fr 0.3fr;
-      grid-template-rows: 1.7fr 0.3fr;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1.7fr 0.3fr;
   gap: 0% 0%;
-      grid-template-areas: "icon_qrcode profile" "contact contact";
+  grid-template-areas: "icon_qrcode profile" "contact contact";
 }
 
 main .top_wrapp .mydata_container .contact {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: contact;
 }
 
 main .top_wrapp .mydata_container .profile {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: profile;
 }
 
 main .top_wrapp .mydata_container .icon_qrcode {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: icon_qrcode;
 }
 
 main .top_wrapp .mydata_container .icon_qrcode {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 main .top_wrapp .mydata_container .icon_qrcode .icon {
@@ -153,15 +122,9 @@ main .top_wrapp .mydata_container .icon_qrcode .icon {
   height: calc(50% - 1.5em);
   background-color: var(--sub-color);
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 main .top_wrapp .mydata_container .icon_qrcode .icon img {
@@ -172,15 +135,9 @@ main .top_wrapp .mydata_container .icon_qrcode .qrcode {
   margin-bottom: 1.5em;
   height: calc(50% - 1.5em);
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 main .top_wrapp .mydata_container .icon_qrcode .qrcode img {
@@ -196,15 +153,9 @@ main .top_wrapp .mydata_container .profile {
 }
 
 main .top_wrapp .mydata_container .profile .profile_header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 main .top_wrapp .mydata_container .profile .profile_header h2 {
@@ -217,12 +168,8 @@ main .top_wrapp .mydata_container .profile .profile_header p {
 }
 
 main .top_wrapp .mydata_container .profile ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 1.6em 0;
 }
 
@@ -244,15 +191,9 @@ main .top_wrapp .mydata_container .profile .hobby_contents {
 
 main .top_wrapp .mydata_container .contact {
   background-color: var(--sub-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 20px;
   margin-bottom: 1.5em;
   padding: 0 5%;
@@ -268,15 +209,9 @@ main .top_wrapp .mydata_container .contact .contact_text .mail {
 }
 
 main .top_wrapp .mydata_container .contact ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 main .top_wrapp .mydata_container .contact ul li {
@@ -286,14 +221,9 @@ main .top_wrapp .mydata_container .contact ul li {
 }
 
 main .under_wrapp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   height: 42%;
 }
 
@@ -307,15 +237,9 @@ main .under_wrapp .works {
 
 main .under_wrapp .works .works_header {
   padding: 2em 2.8em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 main .under_wrapp .works .works_header h2 {
@@ -347,14 +271,12 @@ main .under_wrapp .works .swiper .swiper-container .swiper-wrapper .swiper-slide
   height: 100%;
   margin: 0 1%;
   border-radius: 20px;
-  -webkit-transition: 0.8s;
   transition: 0.8s;
   overflow: hidden;
 }
 
 main .under_wrapp .works .swiper .swiper-container .swiper-wrapper .swiper-slide :hover {
   opacity: .4;
-  -webkit-transition: 0.8s;
   transition: 0.8s;
   scale: 1.1;
 }
@@ -362,8 +284,7 @@ main .under_wrapp .works .swiper .swiper-container .swiper-wrapper .swiper-slide
 main .under_wrapp .works .swiper .swiper-container .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 20px;
 }
 
@@ -375,20 +296,22 @@ main .under_wrapp .sanpo {
 }
 
 main .under_wrapp .sanpo .sanpo_wrapp {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  margin-top: 20%;
+  height: 60%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 1.5fr 0.5fr;
+  gap: 0px 0px;
+}
+
+main .under_wrapp .sanpo .sanpo_wrapp .stalker {
+  margin: 0 auto;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+main .under_wrapp .sanpo .sanpo_wrapp .stop_btn {
+  margin: 0 auto;
+  grid-area: 2 / 1 / 3 / 2;
 }
 
 main .under_wrapp .sanpo .sanpo_wrapp button {

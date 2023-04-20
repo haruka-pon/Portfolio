@@ -36,15 +36,9 @@
 
 header {
   height: 5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 1.5em;
 }
 
@@ -66,7 +60,6 @@ header .hamburger span {
   height: 2px;
   border-radius: 20px;
   background-color: var(--text-color);
-  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -93,41 +86,25 @@ header .slide-menu {
   top: 5em;
   width: 115px;
   height: 340px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: .5s;
+  transform: translateX(100%);
   transition: .5s;
   z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 header .slide-menu li {
   font-size: 1.4em;
   font-weight: bold;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   height: 100px;
   width: 100px;
   border-radius: 20px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 5px;
   cursor: pointer;
@@ -136,28 +113,20 @@ header .slide-menu li {
 header .slide-menu li a {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 header .slide-menu li:hover {
   background-color: var(--accent-color-1);
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 header .hamburger.active span:first-of-type {
   /* ハンバーガーメニューの1番目の線 */
   top: 50%;
-  -webkit-transform: rotate(405deg);
-          transform: rotate(405deg);
+  transform: rotate(405deg);
 }
 
 header .hamburger.active span:nth-of-type(2) {
@@ -169,25 +138,17 @@ header .hamburger.active span:nth-of-type(2) {
 header .hamburger.active span:last-of-type {
   /* ハンバーガーメニューの3番目の線 */
   top: 50%;
-  -webkit-transform: rotate(-405deg);
-          transform: rotate(-405deg);
+  transform: rotate(-405deg);
 }
 
 header .slide-menu.active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 header .nav_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 20%;
 }
 
@@ -201,17 +162,10 @@ header .nav_block h1 {
 
 header .date_head {
   width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header .date_head .date time {

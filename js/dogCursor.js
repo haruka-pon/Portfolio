@@ -11,6 +11,7 @@ stopBtn.addEventListener('click', function () {
     stalker.classList.toggle("cursor_move");
 
 
+
     //マウスに追従させる処理
     document.addEventListener('mousemove', function (e) {
         if (stalker.classList.contains("cursor_move")) {
@@ -30,7 +31,11 @@ stopBtn.addEventListener('click', function () {
     });
 
 
-
+    if (stopBtn.textContent === '散歩する') {
+        stopBtn.textContent = 'まて';
+    } else {
+        stopBtn.textContent = '散歩する';
+    }
 
 });
 
